@@ -21,12 +21,15 @@ D. otro partido politico
 C= input("ingrese que partido desea votar:  ")
 if C.upper()=="A":
     print("el usuario", N, ",DNI: ", D,",ha votado al pro")
+    print("gracias por su voto")
 elif C.upper()=="B":
     print("el usuario", N, ",DNI: ", D,",ha votado a los k")
+    print("gracias por su voto")
 elif C.upper()=="C":
     print("el usuario", N, ",DNI: ", D,",ha votado por el partido de izquierda")
+    print("gracias por su voto")
 elif C.upper()=="D":
     print("el usuario", N, ",DNI: ", D,",ha votado por otro partido politico")
+    print("gracias por su voto")
 else:
     print("opcion equivocada")
-print("gracias por su voto")
