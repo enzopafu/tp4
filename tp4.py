@@ -9,8 +9,8 @@
 #!4. mostrar los datos ingresado y el voto realizado.
 #!5. en el caso de no haber elegido bien indicar " opcion mal ingresada".
 
-N= input("ingrese nombre y apellido")
-D= input("ingrese numero de DNI")
+N= input("ingrese nombre y apellido:  ")
+D= input("ingrese numero de DNI:  ")
 print("""
 Opciones a elegir:
 A. partido politico pro
@@ -18,4 +18,15 @@ B. partido politico K
 C. partido politico de izquierda
 D. otro partido politico
 """)
-C= input("ingrese que opcion desea votar")
+C= input("ingrese que partido desea votar:  ")
+if C.upper()=="A":
+    print("el usuario", N, ",DNI: ", D,",ha votado al pro")
+elif C.upper()=="B":
+    print("el usuario", N, ",DNI: ", D,",ha votado a los k")
+elif C.upper()=="C":
+    print("el usuario", N, ",DNI: ", D,",ha votado por el partido de izquierda")
+elif C.upper()=="D":
+    print("el usuario", N, ",DNI: ", D,",ha votado por otro partido politico")
+else:
+    print("opcion equivocada")
+print("gracias por su voto")
